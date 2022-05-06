@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+}
+
+body {
+  background: #131518;
+  counter-reset: step-counter;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 400;
+}
+
+.card {
+  background: radial-gradient(#232A34, #181E27);
+  border-radius: 2rem;
+  font-size: .9rem;
+  color: white;
+  margin: 0 auto;
+  max-width: 25.75rem;
+  padding: 2rem;
+  transition: all .5s;
+
+  &__back {
+    display: none;
+  }
+
+  &__logo {
+    background-color: #262E38;
+    background-image: url("../images/icon-star.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    height: 3rem;
+    margin-bottom: 1.9rem;
+    width: 3rem;
+  }
+
+  &__ratings {
+    background-color: #262E38;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    height: 3rem;
+    margin-bottom: 1.9rem;
+    position: relative;
+    width: 3rem;
+
+    &--container {
+      display: flex;
+
+    }
+
+    &::before {
+      bottom: 1.125rem;
+      color: #7C8798;
+      content: counter(step-counter);
+      counter-increment: step-counter;
+      left: 1.25rem;
+      position: absolute;
+    }
+  }
+
+  &__text  {
+    color: #969FAD;
+    font-size: .9rem;
+    margin-bottom: 2rem;
+    max-width: 21.25rem;
+    line-height: 1.5rem;
+  }
+
+  &__title {
+    font-size: 1.75rem;
+    margin-bottom: .5rem;
+  }
+}
+
+.attribution {
+  color: #AB5CDB;
+  padding-top: 1rem;
+  font-size: .7rem; text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
