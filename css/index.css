@@ -22,13 +22,21 @@ body {
   border-radius: 2rem;
   font-size: 0.9rem;
   color: white;
+  height: 416px;
   margin: 0 auto;
   max-width: 25.75rem;
   padding: 2rem;
-  transition: all 0.5s;
 }
 .card__back {
-  display: none;
+  background-color: #AB5CDB;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.card__front {
+  position: relative;
+  transition: all 3s;
 }
 .card__logo {
   background-color: #262E38;
@@ -44,11 +52,23 @@ body {
   background-color: #262E38;
   background-repeat: no-repeat;
   background-position: center;
+  border: none;
   border-radius: 50%;
   height: 3rem;
   margin-bottom: 1.9rem;
   position: relative;
+  transition: all 0.5s;
   width: 3rem;
+}
+.card__ratings:focus {
+  background-color: #FC7614;
+  color: white;
+}
+.card__ratings:hover {
+  background-color: #7C8798;
+}
+.card__ratings:hover:hover::before {
+  color: white;
 }
 .card__ratings--container {
   display: flex;
