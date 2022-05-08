@@ -6,10 +6,9 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 - [Overview](#overview)
     - [The challenge](#the-challenge)
-    - [Screenshot](#screenshot)
     - [Links](#links)
+    - [Built with](#built-with)
 
-  
 
 ## Overview
 
@@ -22,6 +21,10 @@ Users should be able to:
 - Select and submit a number rating
 - See the "Thank you" card state after submitting a rating
 
+### Links
+
+- Solution URL: [https://www.frontendmentor.io/solutions/css-grid-cards-with-sass-and-bem-Hyfq-8bI5](https://www.frontendmentor.io/solutions/css-grid-cards-with-sass-and-bem-Hyfq-8bI5)
+- Live Site URL: [https://dalnoki.github.io/interactive-rating-component-js/](https://dalnoki.github.io/interactive-rating-component-js/)
 
 ### Built with
 

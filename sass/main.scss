@@ -22,7 +22,7 @@ body {
   background: radial-gradient(#232A34, #181E27);
   border-radius: 2rem;
   color: white;
-  height: 416px;
+  height: 26rem;
   margin: 0 auto;
   padding: 2rem;
   width: 25.75rem;
@@ -35,12 +35,18 @@ body {
   &__button {
     border: none;
     background-color: #FC7614;
-    border-radius: 50px;
+    border-radius: 3rem;
     color: white;
-    letter-spacing: 2px;
+    letter-spacing: .125rem;
     padding: 1rem 9rem;
     text-align: center;
     text-transform: uppercase;
+    transition: all .5s;
+
+    &:hover {
+      background-color: white;
+      color: #FC7614;
+    }
 
     @media screen and (max-width: 470px) {
       padding: 1rem 6.7rem;
@@ -56,10 +62,14 @@ body {
     background-color: #AB5CDB;
     position: absolute;
     left: 50%;
-    margin-left: -206px;
+    margin-left: -12.875rem;
     text-align: center;
     top: 0;
     z-index: -1;
+
+    @media screen and (max-width: 470px) {
+     margin-left: -9.22rem;
+    }
   }
 
   &__front {
@@ -138,11 +148,11 @@ body {
 
     &--container {
       background-color: #262E38;
-      border-radius: 22px;
+      border-radius: 1.4rem;
       height: 2rem;
       margin: 0 auto 2rem;
       padding-top: 0.5rem;
-      width: 192px;
+      width: 12rem;
     }
 
     &--selected {
