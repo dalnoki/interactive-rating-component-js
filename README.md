@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/css-grid-cards-with-sass-and-bem-Hyfq-8bI5](https://www.frontendmentor.io/solutions/css-grid-cards-with-sass-and-bem-Hyfq-8bI5)
+- Solution URL: [https://www.frontendmentor.io/solutions/a-solution-using-sass-bem-and-vanilla-js-HkIvTlHLc/](https://www.frontendmentor.io/solutions/a-solution-using-sass-bem-and-vanilla-js-HkIvTlHLc/)
 - Live Site URL: [https://dalnoki.github.io/interactive-rating-component-js/](https://dalnoki.github.io/interactive-rating-component-js/)
 
 ### Built with
