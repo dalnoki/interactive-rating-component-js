@@ -3,7 +3,7 @@
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 img {
@@ -24,8 +24,13 @@ body {
   color: white;
   height: 416px;
   margin: 0 auto;
-  width: 25.75rem;
   padding: 2rem;
+  width: 25.75rem;
+
+  @media screen and (max-width: 470px) {
+    padding: 1.5rem;
+    width: 20.44rem
+  }
 
   &__button {
     border: none;
@@ -33,12 +38,17 @@ body {
     border-radius: 50px;
     color: white;
     letter-spacing: 2px;
-    padding: 1rem 12rem;
+    padding: 1rem 9rem;
     text-align: center;
     text-transform: uppercase;
+
+    @media screen and (max-width: 470px) {
+      padding: 1rem 6.7rem;
+    }
   }
 
   &--container {
+    margin-top: 12.18rem;
     position: relative;
   }
 
@@ -78,6 +88,7 @@ body {
     background-position: center;
     border: none;
     border-radius: 50%;
+    color: #7C8798;
     height: 3.2rem;
     margin-bottom: 1.9rem;
     position: relative;
@@ -89,16 +100,17 @@ body {
       color: white;
     }
 
-     &:hover {
+    &:hover {
       background-color: #7C8798;
 
-     &:hover::before {
-       color: white;
-     }
+      &:hover::before {
+        color: white;
+      }
     }
 
     &--container {
       display: flex;
+      justify-content: space-between;
     }
 
     &::before {
@@ -111,10 +123,10 @@ body {
     }
   }
 
-  &__text  {
+  &__text {
     color: #969FAD;
     margin-bottom: 2rem;
-    max-width: 85%;
+    max-width: 90%;
     line-height: 1.5rem;
 
     &--back {
@@ -139,15 +151,23 @@ body {
   }
 
   &__title {
-    font-size: 1.75rem;
-    margin-bottom: .5rem;
+    &--front {
+      font-size: 1.75rem;
+      font-weight: 400;
+      margin-bottom: .375rem;
+    }
+
+    &--back {
+      margin-bottom: .5rem;
+    }
   }
 }
 
 .attribution {
   color: #AB5CDB;
   padding-top: 1rem;
-  font-size: .7rem; text-align: center;
+  font-size: .7rem;
+  text-align: center;
 
   a {
     color: hsl(228, 45%, 44%);

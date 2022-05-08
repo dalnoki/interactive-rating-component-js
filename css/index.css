@@ -3,7 +3,7 @@
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 img {
@@ -24,8 +24,14 @@ body {
   color: white;
   height: 416px;
   margin: 0 auto;
-  width: 25.75rem;
   padding: 2rem;
+  width: 25.75rem;
+}
+@media screen and (max-width: 470px) {
+  .card {
+    padding: 1.5rem;
+    width: 20.44rem;
+  }
 }
 .card__button {
   border: none;
@@ -33,11 +39,17 @@ body {
   border-radius: 50px;
   color: white;
   letter-spacing: 2px;
-  padding: 1rem 12rem;
+  padding: 1rem 9rem;
   text-align: center;
   text-transform: uppercase;
 }
+@media screen and (max-width: 470px) {
+  .card__button {
+    padding: 1rem 6.7rem;
+  }
+}
 .card--container {
+  margin-top: 12.18rem;
   position: relative;
 }
 .card__back {
@@ -72,6 +84,7 @@ body {
   background-position: center;
   border: none;
   border-radius: 50%;
+  color: #7C8798;
   height: 3.2rem;
   margin-bottom: 1.9rem;
   position: relative;
@@ -90,6 +103,7 @@ body {
 }
 .card__ratings--container {
   display: flex;
+  justify-content: space-between;
 }
 .card__ratings::before {
   bottom: 1.125rem;
@@ -102,7 +116,7 @@ body {
 .card__text {
   color: #969FAD;
   margin-bottom: 2rem;
-  max-width: 85%;
+  max-width: 90%;
   line-height: 1.5rem;
 }
 .card__text--back {
@@ -122,8 +136,12 @@ body {
 .card__text--selected {
   color: #FC7614;
 }
-.card__title {
+.card__title--front {
   font-size: 1.75rem;
+  font-weight: 400;
+  margin-bottom: 0.375rem;
+}
+.card__title--back {
   margin-bottom: 0.5rem;
 }
 
