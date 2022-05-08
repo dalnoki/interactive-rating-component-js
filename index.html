@@ -17,33 +17,36 @@
     </head>
     <body>
         <main>
-            <div class="card card__front">
+            <div class="card--container">
+                <div class="card card__front">
+                    <div class="card__logo"></div>
+                    <h2 class="card__title">How did we do?</h2>
+                    <p class="card__text"> Please let us know how we did with your support request. All feedback is
+                        appreciated
+                        to help us improve our offering!</p>
+                    <div class="card__ratings--container">
+                        <input class="card__ratings card__ratings--1" type="button" value=1></input>
+                        <input class="card__ratings card__ratings--2" type="button" value=2></input>
+                        <input class="card__ratings card__ratings--3" type="button" value=3></input>
+                        <input class="card__ratings card__ratings--4" type="button" value=4></input>
+                        <input class="card__ratings card__ratings--5" type="button" value=5></input>
+                    </div>
+                    <button class="card__button">Submit</button>
+                </div>
                 <div class="card card__back">
                     <div class="card__image">
                         <img alt="" src="images/illustration-thank-you.svg">
                     </div>
+                    <div class="card__text--container">
                     <p class="card__text--selected">You selected out of 5</p>
+                    </div>
                     <h2 class="card__title">Thank you!</h2>
-                    <p class="card__text--back">We appreciate you taking the time to give a rating. If you ever need more
+                    <p class="card__text--back">We appreciate you taking the time to give a rating. If you ever need
+                        more
                         support,
                         don’t hesitate to get in touch!</p>
                 </div>
-                <div class="card__logo"></div>
-
-                <h2 class="card__title">How did we do?</h2>
-                <p class="card__text"> Please let us know how we did with your support request. All feedback is
-                    appreciated
-                    to help us improve our offering!</p>
-                <div class="card__ratings--container">
-                    <input class="card__ratings card__ratings--1" type="button" value=1></input>
-                    <input class="card__ratings card__ratings--2" type="button" value=2></input>
-                    <input class="card__ratings card__ratings--3" type="button" value=3></input>
-                    <input class="card__ratings card__ratings--4" type="button" value=4></input>
-                    <input class="card__ratings card__ratings--5" type="button" value=5></input>
-                </div>
-                <button class="button">Submit</button>
             </div>
-
         </main>
         <footer>
             <div class="attribution">

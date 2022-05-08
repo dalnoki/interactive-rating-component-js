@@ -14,29 +14,47 @@ body {
   background: #131518;
   counter-reset: step-counter;
   font-family: "Overpass", sans-serif;
+  font-size: 0.9rem;
   font-weight: 400;
 }
 
 .card {
   background: radial-gradient(#232A34, #181E27);
   border-radius: 2rem;
-  font-size: 0.9rem;
   color: white;
   height: 416px;
   margin: 0 auto;
-  max-width: 25.75rem;
+  width: 25.75rem;
   padding: 2rem;
+}
+.card__button {
+  border: none;
+  background-color: #FC7614;
+  border-radius: 50px;
+  color: white;
+  letter-spacing: 2px;
+  padding: 1rem 12rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.card--container {
+  position: relative;
 }
 .card__back {
   background-color: #AB5CDB;
   position: absolute;
+  left: 50%;
+  margin-left: -206px;
+  text-align: center;
   top: 0;
-  left: 0;
-  opacity: 0;
+  z-index: -1;
 }
 .card__front {
-  position: relative;
-  transition: all 3s;
+  transition: all 1s;
+}
+.card__image {
+  margin: 2.81rem auto 2rem;
+  width: 10.125rem;
 }
 .card__logo {
   background-color: #262E38;
@@ -54,11 +72,11 @@ body {
   background-position: center;
   border: none;
   border-radius: 50%;
-  height: 3rem;
+  height: 3.2rem;
   margin-bottom: 1.9rem;
   position: relative;
   transition: all 0.5s;
-  width: 3rem;
+  width: 3.2rem;
 }
 .card__ratings:focus {
   background-color: #FC7614;
@@ -83,10 +101,26 @@ body {
 }
 .card__text {
   color: #969FAD;
-  font-size: 0.9rem;
   margin-bottom: 2rem;
-  max-width: 21.25rem;
+  max-width: 85%;
   line-height: 1.5rem;
+}
+.card__text--back {
+  color: #969FAD;
+  line-height: 1.5rem;
+  margin: 0 auto;
+  width: 80%;
+}
+.card__text--container {
+  background-color: #262E38;
+  border-radius: 22px;
+  height: 2rem;
+  margin: 0 auto 2rem;
+  padding-top: 0.5rem;
+  width: 192px;
+}
+.card__text--selected {
+  color: #FC7614;
 }
 .card__title {
   font-size: 1.75rem;
